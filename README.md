@@ -18,7 +18,7 @@ import type {Config} from 'tailwindcss';
 import zag from 'tailwindcss-plugin-zag';
 
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   plugins: [
     // using the default prefix: "ui"
     zag,
@@ -47,8 +47,8 @@ export function Component() {
 
 ### Example using Ark UI react components
 
-```ts
-// tailwind.config.ts
+```js
+// tailwind.config.js
 import zag from 'tailwindcss-plugin-zag';
 
 /** @type {import('tailwindcss').Config} */

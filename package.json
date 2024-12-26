@@ -2,7 +2,7 @@
 	"name": "tailwindcss-plugin-zag",
 	"type": "module",
 	"license": "MIT",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
@@ -17,7 +17,9 @@
 		},
 		"./package.json": "./package.json"
 	},
-	"files": ["dist"],
+	"files": [
+		"dist"
+	],
 	"publishConfig": {
 		"access": "public"
 	},
@@ -35,7 +37,12 @@
 		"email": "calvojp92@gmail.com"
 	},
 	"description": "TailwindCSS plugin for Ark UI",
-	"keywords": ["TailwindCSS", "zag", "Ark UI", "Plugin"],
+	"keywords": [
+		"TailwindCSS",
+		"zag",
+		"Ark UI",
+		"Plugin"
+	],
 	"scripts": {
 		"test": "vitest",
 		"lint": "biome lint .",
@@ -66,8 +73,13 @@
 			"release": false
 		},
 		"hooks": {
-			"before:init": ["pnpm lint", "pnpm test"],
-			"after:bump": ["pnpm build"]
+			"before:init": [
+				"pnpm lint",
+				"pnpm test"
+			],
+			"after:bump": [
+				"pnpm build"
+			]
 		}
 	}
 }
