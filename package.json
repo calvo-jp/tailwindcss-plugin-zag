@@ -17,9 +17,7 @@
 		},
 		"./package.json": "./package.json"
 	},
-	"files": [
-		"dist"
-	],
+	"files": ["dist"],
 	"publishConfig": {
 		"access": "public"
 	},
@@ -30,20 +28,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/calvo-jp/tailwindcss-plugin-ark-ui.git",
-		"directory": "packages/tailwindcss"
+		"url": "git+https://github.com/calvo-jp/tailwindcss-plugin-zag.git"
 	},
 	"bugs": {
-		"url": "https://github.com/calvo-jp/tailwindcss-plugin-ark-ui/issues",
+		"url": "https://github.com/calvo-jp/tailwindcss-plugin-zag/issues",
 		"email": "calvojp92@gmail.com"
 	},
 	"description": "TailwindCSS plugin for Ark UI",
-	"keywords": [
-		"TailwindCSS",
-		"zag",
-		"Ark UI",
-		"Plugin"
-	],
+	"keywords": ["TailwindCSS", "zag", "Ark UI", "Plugin"],
 	"scripts": {
 		"test": "vitest",
 		"lint": "biome lint .",
@@ -74,13 +66,8 @@
 			"release": false
 		},
 		"hooks": {
-			"before:init": [
-				"pnpm lint",
-				"pnpm test"
-			],
-			"after:bump": [
-				"pnpm build"
-			]
+			"before:init": ["pnpm lint", "pnpm test"],
+			"after:bump": ["pnpm build"]
 		}
 	}
 }
