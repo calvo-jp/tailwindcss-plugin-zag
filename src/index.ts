@@ -74,6 +74,7 @@ const VARIANT_ENTRIES: VariantEntry[] = [
 	{key: 'view-year', values: ['view="year"']},
 	{key: 'under-value', values: ['state="under-value"']},
 	{key: 'over-value', values: ['state="over-value"']},
+	{key: 'at-value', values: ['state="at-value"']},
 	{key: 'delete-intent', values: [null]},
 	{key: 'unit-hour', values: ['unit="hour"']},
 	{key: 'unit-minute', values: ['unit="minute"']},
