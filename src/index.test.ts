@@ -1,14 +1,14 @@
 import postcss from 'postcss';
 import tailwind, {type Config} from 'tailwindcss';
-import ark from './index.js';
+import zag from './index.js';
 
 const WHITESPACE_REGEX = /[\t\n\r\s]+/g;
 const WHITESPACE = ' ';
 
-async function generateCss(content: string) {
+async function generateCss(content: string, prefix?: string) {
 	const config: Config = {
 		content: [{raw: content}],
-		plugins: [ark],
+		plugins: [prefix ? zag({prefix}) : zag],
 	};
 
 	const plugin = tailwind(config);
@@ -48,6 +48,14 @@ describe('plugin is working', () => {
 
 		expect(css.replace(WHITESPACE_REGEX, WHITESPACE)).toBe(
 			'.peer[data-state="open"] ~ .ui-peer-open\\:block { display: block }',
+		);
+	});
+
+	test('custom prefix', async () => {
+		const css = await generateCss('<div class="x-open:block"></div>', 'x');
+
+		expect(css.replace(WHITESPACE_REGEX, WHITESPACE)).toBe(
+			'.x-open\\:block[data-state="open"] { display: block }',
 		);
 	});
 });
