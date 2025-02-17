@@ -201,14 +201,14 @@ export default plugin.withOptions<ZagPluginOptions>((config = {}) => {
 			addVariant(
 				`${prefix}-group-${key}`,
 				values.map((value) =>
-					value === null ? `:merge(.group)[data-${key}] &` : `:merge(.group)[data-${value}] &`,
+					value === null ? `.group[data-${key}] &` : `.group[data-${value}] &`,
 				),
 			);
 
 			addVariant(
 				`${prefix}-peer-${key}`,
 				values.map((value) =>
-					value === null ? `:merge(.peer)[data-${key}] ~ &` : `:merge(.peer)[data-${value}] ~ &`,
+					value === null ? `.peer[data-${key}] ~ &` : `.peer[data-${value}] ~ &`,
 				),
 			);
 		}
