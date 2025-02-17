@@ -17,9 +17,7 @@
 		},
 		"./package.json": "./package.json"
 	},
-	"files": [
-		"dist"
-	],
+	"files": ["dist"],
 	"publishConfig": {
 		"access": "public"
 	},
@@ -37,12 +35,7 @@
 		"email": "calvojp92@gmail.com"
 	},
 	"description": "TailwindCSS plugin for Ark UI",
-	"keywords": [
-		"TailwindCSS",
-		"zag",
-		"Ark UI",
-		"Plugin"
-	],
+	"keywords": ["TailwindCSS", "zag", "Ark UI", "Plugin"],
 	"scripts": {
 		"test": "vitest",
 		"lint": "biome lint .",
@@ -62,7 +55,7 @@
 		"vitest": "^2.1.8"
 	},
 	"peerDependencies": {
-		"tailwindcss": "^3.3.3"
+		"tailwindcss": "^3.3.3 || ^4.0.0"
 	},
 	"release-it": {
 		"git": {
@@ -73,13 +66,8 @@
 			"release": false
 		},
 		"hooks": {
-			"before:init": [
-				"pnpm lint",
-				"pnpm test"
-			],
-			"after:bump": [
-				"pnpm build"
-			]
+			"before:init": ["pnpm lint", "pnpm test"],
+			"after:bump": ["pnpm build"]
 		}
 	}
 }
