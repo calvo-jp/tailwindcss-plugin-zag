@@ -31,6 +31,12 @@ export default {
 } satisfies Config
 ```
 
+If you are using tailwind v4, you can add the plugin to your `css` file like this:
+
+```css
+@plugin 'tailwindcss-plugin-zag';
+```
+
 Style your components
 
 ```tsx
