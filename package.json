@@ -30,10 +30,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/calvo-jp/tailwindcss-zag.git"
+    "url": "git+https://github.com/calvo-jp/tailwind-zag.git"
   },
   "bugs": {
-    "url": "https://github.com/calvo-jp/tailwindcss-zag/issues",
+    "url": "https://github.com/calvo-jp/tailwind-zag/issues",
     "email": "calvojp92@gmail.com"
   },
   "description": "Placeholder package for tailwind-zag",
