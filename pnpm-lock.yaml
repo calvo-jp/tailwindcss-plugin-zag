@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       tailwind-zag:
-        specifier: ^1.0.1
-        version: 1.0.1(tailwindcss@3.4.17)
+        specifier: ^1.0.2
+        version: 1.0.2(tailwindcss@3.4.17)
     devDependencies:
       '@tsconfig/node22':
         specifier: ^22.0.0
@@ -1530,8 +1530,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  tailwind-zag@1.0.1:
-    resolution: {integrity: sha512-KnAwoiK+wTn7IVJ9JDDZtKEtWLXmej0B+JUXovo0idW6SAcftK7sQS1fggxw0Nw0QtBckqZasm5BJrDdvqNtJQ==}
+  tailwind-zag@1.0.2:
+    resolution: {integrity: sha512-P7bbRUSWq3/VOwaYwG9uc75sfTzVRE6Bp4uUaWFn4cizRhHiC9n/U0ym0AAYjm/kp1bRdnxu7yV+TjKstjwUVw==}
     peerDependencies:
       tailwindcss: ^3.3.3 || ^4.0.0
 
@@ -3080,7 +3080,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  tailwind-zag@1.0.1(tailwindcss@3.4.17):
+  tailwind-zag@1.0.2(tailwindcss@3.4.17):
     dependencies:
       tailwindcss: 3.4.17
 

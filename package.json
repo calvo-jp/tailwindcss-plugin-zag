@@ -9,11 +9,11 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.d.ts",
-      "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
-      }
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": "./dist/index.cjs"
     },
     "./package.json": "./package.json"
   },
@@ -42,7 +42,7 @@
     "release": "release-it"
   },
   "dependencies": {
-    "tailwind-zag": "^1.0.1"
+    "tailwind-zag": "^1.0.2"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
