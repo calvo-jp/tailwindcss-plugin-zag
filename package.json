@@ -1,85 +1,72 @@
 {
-	"name": "tailwindcss-plugin-zag",
-	"type": "module",
-	"license": "MIT",
-	"version": "0.1.0",
-	"main": "./dist/index.cjs",
-	"module": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"import": {
-				"types": "./dist/index.d.ts",
-				"default": "./dist/index.js"
-			},
-			"require": "./dist/index.cjs"
-		},
-		"./package.json": "./package.json"
-	},
-	"files": [
-		"dist"
-	],
-	"publishConfig": {
-		"access": "public"
-	},
-	"packageManager": "pnpm@9.15.1",
-	"author": {
-		"name": "John Paul Calvo",
-		"email": "calvojp92@gmail.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/calvo-jp/tailwindcss-plugin-zag.git"
-	},
-	"bugs": {
-		"url": "https://github.com/calvo-jp/tailwindcss-plugin-zag/issues",
-		"email": "calvojp92@gmail.com"
-	},
-	"description": "TailwindCSS plugin for zag-powered components",
-	"keywords": [
-		"TailwindCSS",
-		"zag",
-		"Ark UI",
-		"Plugin"
-	],
-	"scripts": {
-		"test": "vitest",
-		"lint": "biome lint .",
-		"format": "biome format --write .",
-		"build": "tsup",
-		"release": "release-it"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
-		"@tsconfig/node22": "^22.0.0",
-		"@types/node": "^22.10.2",
-		"postcss": "^8.4.49",
-		"release-it": "^17.11.0",
-		"tailwindcss": "^3.4.17",
-		"tsup": "^8.3.5",
-		"typescript": "^5.7.2",
-		"vitest": "^2.1.8"
-	},
-	"peerDependencies": {
-		"tailwindcss": "^3.3.3 || ^4.0.0"
-	},
-	"release-it": {
-		"git": {
-			"commitMessage": "chore: release ${npm.name} v${version}",
-			"tagName": "${npm.name}@${version}"
-		},
-		"github": {
-			"release": false
-		},
-		"hooks": {
-			"before:init": [
-				"pnpm lint",
-				"pnpm test"
-			],
-			"after:bump": [
-				"pnpm build"
-			]
-		}
-	}
+  "name": "tailwindcss-plugin-zag",
+  "type": "module",
+  "license": "MIT",
+  "version": "0.1.0",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.d.ts",
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@9.15.1",
+  "author": {
+    "name": "John Paul Calvo",
+    "email": "calvojp92@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calvo-jp/tailwindcss-zag.git"
+  },
+  "bugs": {
+    "url": "https://github.com/calvo-jp/tailwindcss-zag/issues",
+    "email": "calvojp92@gmail.com"
+  },
+  "description": "Placeholder package for tailwind-zag",
+  "scripts": {
+    "build": "tsup",
+    "release": "release-it"
+  },
+  "dependencies": {
+    "tailwind-zag": "^1.0.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.10.2",
+    "release-it": "^17.11.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${npm.name} v${version}",
+      "tagName": "${npm.name}@${version}"
+    },
+    "github": {
+      "release": false
+    },
+    "hooks": {
+      "before:init": [
+        "pnpm lint",
+        "pnpm test"
+      ],
+      "after:bump": [
+        "pnpm build"
+      ]
+    }
+  }
 }
